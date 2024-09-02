@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Container from "./Container";
+import Link from "next/link";
+
+import profilePic from "public/profile.jpg";
 
 export default function Hero() {
   return (
@@ -11,32 +14,33 @@ export default function Hero() {
             <div className="flex flex-col items-center space-y-4 text-center lg:items-start lg:text-left">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Desroteiriza: Redescobrindo o Espírito Santo
+                  Desroteiriza: A Cada Lugar, Um Novo Olhar
                 </h1>
-                <p className="max-w-[600px] text-gray-200 md:text-xl">
+                <p className="max-w-[37.5rem] text-gray-500 md:text-xl">
                   Um convite para explorar o extraordinário e revelar as
                   maravilhas escondidas do Espírito Santo.
                 </p>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button className="bg-secondary text-white hover:bg-secondary/80">
-                  Seja uma Parceira
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-white text-white hover:bg-white/20"
+                <Link
+                  href="#about"
+                  className="grid place-items-center rounded-md bg-secondary p-2 text-white hover:bg-secondary/80"
                 >
                   Saiba Mais
-                </Button>
+                </Link>
+                <Link
+                  href="#contact-us"
+                  className="grid place-items-center rounded-md border-2 border-white p-2 text-white hover:bg-white/20"
+                >
+                  Seja Parceiro
+                </Link>
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src={profilePic}
                 alt="As duas amigas fundadoras da Desroteiriza"
-                width={400}
-                height={400}
-                className="rounded-full border-4 border-white shadow-lg"
+                className="aspect-square rounded-full border-4 border-white object-cover shadow-lg"
               />
             </div>
           </div>

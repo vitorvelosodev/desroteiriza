@@ -7,19 +7,20 @@ import { Input } from "./ui/input";
 export default function ContactUs() {
   return (
     <section
-      id="partners"
+      id="contact-us"
       className="w-full bg-primary py-12 text-white md:py-24 lg:py-32"
     >
       <Container>
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
+            <div className="space-y-10">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Seja Nossa Parceira
+                Fale com a gente
               </h2>
               <p className="mx-auto max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Junte-se a nós nesta jornada de descoberta e promoção do
-                Espírito Santo. Sua marca pode fazer parte desta história única.
+                Seja para uma dúvida ou para juntar-se a nós nesta jornada de
+                descoberta e promoção do Espírito Santo. Nos mande uma mensagem
+                para fazer parte desta história única.
               </p>
             </div>
             <div className="w-full max-w-sm space-y-2">
