@@ -4,7 +4,7 @@ import Container from "./Container";
 
 export default function Header() {
   return (
-    <header className="fixed left-0 top-0 w-full bg-primary px-4 text-white lg:px-6">
+    <header className="fixed left-0 top-0 z-50 w-full bg-primary px-4 text-white lg:px-6">
       <Container className="flex h-14 w-full items-center">
         <Link className="flex items-center justify-center" href="#">
           <Compass className="h-6 w-6" />

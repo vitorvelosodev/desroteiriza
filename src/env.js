@@ -8,6 +8,9 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
+    RESEND_API_KEY: z.string(),
+    RESEND_FROM_EMAIL: z.string(),
+    RESEND_TO_EMAIL_ARRAY: z.string(),
   },
 
   /**
@@ -25,6 +28,9 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
+    RESEND_API_KEY: process.env.RESEND_API_KEY,
+    RESEND_FROM_EMAIL: process.env.RESEND_FROM_EMAIL,
+    RESEND_TO_EMAIL_ARRAY: process.env.RESEND_TO_EMAIL_ARRAY
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

@@ -20,21 +20,21 @@ export default function AboutUs() {
                   Sobre a Desroteiriza
                 </h2>
                 <p className="max-w-[600px] text-gray-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  A Desroteiriza nasce da paixão de duas mulheres pelo Espírito
+                  A Desroteiriza nasce da paixão de duas amigas pelo Espírito
                   Santo. Nossa missão é revelar o pouco explorado, o pouco
                   conhecido e o incomum neste estado fascinante.
                 </p>
               </div>
               <ul className="grid gap-2 py-4">
-                <li className="text-tertiary flex items-center gap-2">
+                <li className="flex items-center gap-2 text-tertiary">
                   <MapPin className="h-4 w-4" />
                   <span>Explorando destinos únicos</span>
                 </li>
-                <li className="text-tertiary flex items-center gap-2">
+                <li className="flex items-center gap-2 text-tertiary">
                   <Users className="h-4 w-4" />
                   <span>Conectando com comunidades locais</span>
                 </li>
-                <li className="text-tertiary flex items-center gap-2">
+                <li className="flex items-center gap-2 text-tertiary">
                   <Compass className="h-4 w-4" />
                   <span>Redescobrindo o familiar com um novo olhar</span>
                 </li>

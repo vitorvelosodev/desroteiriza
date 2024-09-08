@@ -1,8 +1,9 @@
 "use client";
 
-import Container from "./Container";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+import Container from "../Container";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import Form from "./Form";
 
 export default function ContactUs() {
   return (
@@ -23,31 +24,8 @@ export default function ContactUs() {
                 para fazer parte desta história única.
               </p>
             </div>
-            <div className="w-full max-w-sm space-y-2">
-              <form className="flex flex-col gap-2">
-                <Input
-                  placeholder="Seu nome"
-                  type="text"
-                  className="bg-white"
-                />
-                <Input
-                  placeholder="Sua empresa"
-                  type="text"
-                  className="bg-white"
-                />
-                <Input
-                  placeholder="Seu e-mail"
-                  type="email"
-                  className="bg-white"
-                />
-                <Button
-                  type="submit"
-                  className="bg-secondary text-white hover:bg-[#e67100]"
-                >
-                  Quero ser parceira
-                </Button>
-              </form>
-            </div>
+            <Form />
+            <div className="w-full max-w-sm space-y-2"></div>
           </div>
         </div>
       </Container>
