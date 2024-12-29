@@ -6,12 +6,12 @@ import WhereWeAre from "@/components/WhereWeAre";
 
 export default function HomePage() {
   return (
-    <>
+    <main>
       <Hero />
       <AboutUs />
       <Mission />
       <WhereWeAre />
       <ContactUs />
-    </>
+    </main>
   );
 }
