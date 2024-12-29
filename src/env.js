@@ -11,6 +11,7 @@ export const env = createEnv({
     RESEND_API_KEY: z.string(),
     RESEND_FROM_EMAIL: z.string(),
     RESEND_TO_EMAIL_ARRAY: z.string(),
+    SANITY_API_READ_TOKEN: z.string(),
   },
 
   /**
@@ -20,6 +21,8 @@ export const env = createEnv({
    */
   client: {
     // NEXT_PUBLIC_CLIENTVAR: z.string(),
+    NEXT_PUBLIC_SANITY_DATASET: z.string(),
+    NEXT_PUBLIC_SANITY_PROJECT_ID: z.string(),
   },
 
   /**
@@ -30,7 +33,10 @@ export const env = createEnv({
     NODE_ENV: process.env.NODE_ENV,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
     RESEND_FROM_EMAIL: process.env.RESEND_FROM_EMAIL,
-    RESEND_TO_EMAIL_ARRAY: process.env.RESEND_TO_EMAIL_ARRAY
+    RESEND_TO_EMAIL_ARRAY: process.env.RESEND_TO_EMAIL_ARRAY,
+    SANITY_API_READ_TOKEN: process.env.SANITY_API_READ_TOKEN,
+    NEXT_PUBLIC_SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET,
+    NEXT_PUBLIC_SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

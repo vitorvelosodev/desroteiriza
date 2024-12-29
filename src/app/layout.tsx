@@ -1,8 +1,6 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import "@/styles/globals.css";
 
-import { GeistSans } from "geist/font/sans";
+import { Inter } from "next/font/google";
 import { type Metadata } from "next";
 import { Toaster } from "sonner";
 
@@ -13,18 +11,16 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt_br" className={`${GeistSans.variable}`}>
-      <body>
+    <html lang="pt_br" className={`${inter.variable}`}>
+      <body className="">
         <Toaster richColors />
-        <div className="flex min-h-dvh flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+        <div className="min-h-dvh">{children}</div>
       </body>
     </html>
   );
