@@ -1,8 +1,6 @@
 "use client";
 
 import Container from "../Container";
-import { Button } from "../ui/button";
-import { Input } from "../ui/input";
 import Form from "./Form";
 
 export default function ContactUs() {

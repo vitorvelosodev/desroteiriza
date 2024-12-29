@@ -1,6 +1,6 @@
 "use client";
 
-import { ContactUs } from "@/types/ContactUs.type";
+import { type ContactUs } from "@/types/ContactUs.type";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { useForm } from "react-hook-form";
@@ -38,7 +38,9 @@ export default function Form() {
       reset();
       return;
     } catch (error) {
-      process.env.nodeEnv !== "production" && console.error(error);
+      if (process.env.NODE_ENV !== "production") {
+        console.error(error);
+      }
       toast.error("Algo de errado aconteceu, tente novamente");
       return;
     }

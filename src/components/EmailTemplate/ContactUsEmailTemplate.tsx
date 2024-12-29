@@ -1,4 +1,4 @@
-import { ContactUs } from "@/types/ContactUs.type";
+import { type ContactUs } from "@/types/ContactUs.type";
 
 export default function ContactUsEmailTemplate({
   name,

@@ -1,9 +1,6 @@
 import { urlFor } from "@/sanity/lib/image";
-import { sanityFetch } from "@/sanity/lib/live";
-import { postBySlugQuery } from "@/sanity/lib/queries";
 import { getBlogPostBySlug } from "@/service/cms/blog/getBlog";
 import Image from "next/image";
-import { Post, PostBySlugQueryResult } from "sanity.types";
 
 export default async function BlogSlugPage({
   params,
@@ -22,7 +19,7 @@ export default async function BlogSlugPage({
     <div>
       <h1>{post.title}</h1>
       <p>{post.publishedAt}</p>
-      {post.mainImage && post.mainImage.asset && (
+      {post.mainImage?.asset && (
         <Image
           src={urlFor(post.mainImage).url()}
           alt={post.mainImage?.alt ?? ""}

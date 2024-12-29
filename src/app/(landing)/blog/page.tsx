@@ -17,19 +17,16 @@ export default async function BlogPage() {
             <Link href={`/blog/${post.slug?.current}`}>
               <h2 className="text-2xl font-bold">{post.title}</h2>
               <p>
-                {new Date(post.publishedAt as string).toLocaleDateString(
-                  "pt-BR",
-                  {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  },
-                )}
+                {new Date(post.publishedAt!).toLocaleDateString("pt-BR", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
               </p>
               {post.mainImage?.asset && (
                 <Image
                   src={urlFor(post.mainImage).width(500).height(300).url()}
-                  alt={post.mainImage?.alt || "Blog post image"}
+                  alt={post.mainImage?.alt ?? "Blog post image"}
                   width={500}
                   height={300}
                   className="rounded-lg"

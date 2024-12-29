@@ -1,6 +1,6 @@
 import { client } from "@/sanity/lib/client";
 import { postBySlugQuery, postQuery } from "@/sanity/lib/queries";
-import { Post } from "sanity.types";
+import { type Post } from "sanity.types";
 
 const getBlogPost = async () => {
   try {
