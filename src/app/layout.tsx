@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 
-import { Inter } from "next/font/google";
+import { Inter, Fraunces } from "next/font/google";
 import { type Metadata } from "next";
 import { Toaster } from "sonner";
 
@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 };
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-
+const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces" });
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt_br" className={`${inter.variable}`}>
+    <html lang="pt_br" className={`${inter.variable} ${fraunces.variable}`}>
       <body className="">
         <Toaster richColors />
         <div className="min-h-dvh">{children}</div>

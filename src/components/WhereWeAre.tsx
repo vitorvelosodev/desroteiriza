@@ -1,5 +1,6 @@
-import { Instagram, Youtube } from "lucide-react";
+import * as simpleIcons from "simple-icons";
 import Container from "./Container";
+import { SimpleIcon } from "./SimpleIcon";
 
 export default function WhereWeAre() {
   return (
@@ -7,7 +8,7 @@ export default function WhereWeAre() {
       <Container>
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-10 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-5xl">
+            <h2 className="font-title text-3xl font-bold tracking-tighter text-primary sm:text-5xl">
               Onde Estamos
             </h2>
             <p className="max-w-[600px] text-gray-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -19,18 +20,18 @@ export default function WhereWeAre() {
                 href="https://www.instagram.com/desroteiriza"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-full bg-secondary px-6 py-3 text-white transition-colors hover:bg-[#e67100]"
+                className="flex items-center justify-center gap-2 bg-secondary px-6 py-3 text-white transition-colors hover:bg-[#e67100]"
               >
-                <Instagram className="h-6 w-6" />
+                <SimpleIcon icon={simpleIcons.siInstagram} className="invert" />
                 <span className="font-semibold">Siga no Instagram</span>
               </a>
               <a
                 href="https://www.youtube.com/@desroteiriza"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-full bg-secondary px-6 py-3 text-white transition-colors hover:bg-[#e67100]"
+                className="flex items-center justify-center gap-2 bg-secondary px-6 py-3 text-white transition-colors hover:bg-[#e67100]"
               >
-                <Youtube className="h-6 w-6" />
+                <SimpleIcon icon={simpleIcons.siYoutube} className="invert" />
                 <span className="font-semibold">Inscreva-se no YouTube</span>
               </a>
             </div>
