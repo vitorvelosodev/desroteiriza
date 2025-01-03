@@ -89,7 +89,7 @@ export default function Form() {
       </div>
       <div>
         <textarea
-          className="h-28 w-full resize-none rounded-md border bg-background px-3 py-2 text-sm text-black ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          className="h-28 w-full resize-none border bg-background px-3 py-2 text-sm text-black ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
           placeholder="Sua mensagem"
           {...register("message")}
         ></textarea>
@@ -97,7 +97,7 @@ export default function Form() {
       </div>
       <Button
         type="submit"
-        className="bg-secondary text-white hover:bg-[#e67100]"
+        className="rounded-none bg-secondary text-white hover:bg-[#e67100]"
         disabled={isSubmitting}
       >
         Quero ser parceira
