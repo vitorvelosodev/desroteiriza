@@ -3,7 +3,7 @@ import Container from "./Container";
 import Link from "next/link";
 
 import profilePic1 from "public/hero/profile.jpg";
-import profilePic2 from "public/hero/IMG_7313.jpg";
+import profilePic2 from "public/hero/praia-cut.jpg";
 import profilePic3 from "public/hero/IMG_7395.jpg";
 
 export default function Hero() {
